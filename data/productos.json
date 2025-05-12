@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "nombre": "Camiseta Básica Blanca",
+    "precio": 14.99,
+    "imagen": "img/camiseta1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Camiseta Negra Slim",
+    "precio": 16.99,
+    "imagen": "img/camiseta2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Camiseta Estampado Floral",
+    "precio": 18.99,
+    "imagen": "img/camiseta3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Camiseta Oversize Gris",
+    "precio": 17.49,
+    "imagen": "img/camiseta4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Camiseta con Texto Rojo",
+    "precio": 15.00,
+    "imagen": "img/camiseta5.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Camiseta Deportiva Azul",
+    "precio": 19.90,
+    "imagen": "img/camiseta6.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Camiseta Retro Vintage",
+    "precio": 22.00,
+    "imagen": "img/camiseta7.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Camiseta Manga Larga Negra",
+    "precio": 20.00,
+    "imagen": "img/camiseta8.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "Camiseta Tie-Dye Verde",
+    "precio": 21.50,
+    "imagen": "img/camiseta9.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Camiseta Logo Minimalista",
+    "precio": 18.00,
+    "imagen": "img/camiseta10.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Camiseta Anime Blanca",
+    "precio": 19.99,
+    "imagen": "img/camiseta11.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Camiseta Frase Motivadora",
+    "precio": 17.99,
+    "imagen": "img/camiseta12.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Camiseta Estilo Skate",
+    "precio": 23.00,
+    "imagen": "img/camiseta13.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Camiseta con Rayas",
+    "precio": 20.50,
+    "imagen": "img/camiseta14.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Camiseta de Diseñador",
+    "precio": 30.00,
+    "imagen": "img/camiseta15.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Camiseta Cuello en V",
+    "precio": 16.00,
+    "imagen": "img/camiseta16.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Camiseta Estilo Skate Azul",
+    "precio": 22.99,
+    "imagen": "img/camiseta17.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Camiseta Casual Beige",
+    "precio": 18.75,
+    "imagen": "img/camiseta18.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Camiseta Estampado Geométrico",
+    "precio": 24.99,
+    "imagen": "img/camiseta19.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Camiseta con Arte Urbano",
+    "precio": 26.90,
+    "imagen": "img/camiseta20.jpg"
+  }
+]

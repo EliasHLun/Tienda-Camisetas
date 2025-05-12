@@ -1,0 +1,260 @@
+/* Fuente y reinicio básico */
+
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  body {
+  font-family: 'Rubik', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  }
+  
+  /* Fondos específicos por página */
+  .fondo-index {
+  background-image: url('../img/fondo-index.jpg');
+  }
+  
+  .fondo-login {
+  background-color: #5a3c1b;
+  }
+  
+  .fondo-registro {
+  background-color: #5a3c1b;
+  }
+  
+  .fondo-perfil {
+  background-color: #5a3c1b;
+  }
+  
+  .fondo-carrito {
+  background-color: #8B4513;
+  }
+  
+  .fondo-pago {
+  background-image: url('../img/fondo-pago.jpg');
+  }
+  
+  /* Contenedor general */
+  .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  color: white;
+  }
+  
+  /* Header y nav */
+  header {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  }
+  
+  header nav {
+  margin-top: 1rem;
+  }
+  
+  header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  }
+  
+  header nav a:hover {
+  color: #ffd700;
+  }
+  
+  /* Catálogo de productos */
+  .productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  }
+  
+  .producto {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  backdrop-filter: blur(4px);
+  }
+  
+  .producto:hover {
+  transform: scale(1.03);
+  }
+  
+  .producto img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  }
+  
+  .producto h3 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #fff;
+  }
+  
+  .producto p {
+  margin: 0.3rem 0;
+  color: #ddd;
+  }
+  
+  .btn-agregar {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  transition: background 0.3s;
+  }
+  
+  .btn-agregar:hover {
+  background: #e03b3b;
+  }
+  
+  /* Formularios (login, registro, perfil, pago) */
+  .formulario {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: 2rem auto;
+  backdrop-filter: blur(5px);
+  color: white;
+  }
+  
+  .formulario h2, .formulario h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #fff;
+  }
+  
+  .formulario label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  }
+  
+  .formulario input {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  }
+  
+  /* Carrito */
+  .carrito-producto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  }
+  
+  .carrito-producto img {
+  width: 80px;
+  border-radius: 8px;
+  }
+  
+  .carrito-producto-info {
+  flex: 1;
+  margin-left: 1rem;
+  }
+  
+  .total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  margin-top: 2rem;
+  color: #fff;
+  }
+  
+  .btn-vaciar, .btn-finalizar {
+  background-color: #333;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  }
+  
+  .btn-vaciar:hover, .btn-finalizar:hover {
+  background-color: #555;
+  }
+  
+  .btn-eliminar {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  }
+  
+  .btn-eliminar:hover {
+  background-color: darkred;
+  }
+  
+  /* Barra de búsqueda */
+  .barra-busqueda {
+  text-align: center;
+  margin: 2rem auto;
+  }
+  
+  .barra-busqueda input {
+  padding: 0.6rem;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1rem;
+  }
+  
+  /* Footer */
+  footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+  .productos {
+  grid-template-columns: 1fr;
+  }
+  
+  .formulario {
+  width: 90%;
+  }
+  
+  .barra-busqueda input {
+  width: 90%;
+  }
+  }

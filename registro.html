@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body.fondo-registro {
+      background-color: #8B4513;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .registro-container {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 14px;
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .registro-container h2 {
+      color: #333;
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+
+    .registro-container input {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    .registro-container button {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .registro-container button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body class="fondo-registro">
+  <div class="registro-container">
+    <h2>Crear Cuenta</h2>
+    <form id="form-registro">
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <input type="email" id="email" placeholder="Correo electrónico" required />
+      <input type="password" id="password" placeholder="Contraseña" required />
+      <button type="submit">Registrarse</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('form-registro').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      const nuevoUsuario = { nombre, email, password };
+      const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+      usuarios.push(nuevoUsuario);
+      localStorage.setItem('usuarios', JSON.stringify(usuarios));
+      alert('Usuario registrado exitosamente');
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>

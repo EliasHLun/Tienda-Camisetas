@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body.fondo-perfil {
+      background-color: #8B4513;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .perfil-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 14px;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .perfil-container h2 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .perfil-container p {
+      font-size: 1.2rem;
+      color: #444;
+      margin: 0.5rem 0;
+    }
+
+    .perfil-container button {
+      margin-top: 1.5rem;
+      background-color: #333;
+      color: white;
+      font-weight: bold;
+      font-size: 1rem;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .perfil-container button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body class="fondo-perfil">
+  <div class="perfil-container">
+    <h2>Mi Perfil</h2>
+    <p><strong>Nombre:</strong> <span id="perfil-nombre">Cargando...</span></p>
+    <p><strong>Correo:</strong> <span id="perfil-email">Cargando...</span></p>
+    <button onclick="cerrarSesion()">Cerrar Sesión</button>
+  </div>
+
+  <script>
+    const usuario = JSON.parse(localStorage.getItem('usuarioLogueado'));
+
+    if (!usuario) {
+      alert('Debes iniciar sesión primero');
+      window.location.href = 'login.html';
+    } else {
+      document.getElementById('perfil-nombre').textContent = usuario.nombre;
+      document.getElementById('perfil-email').textContent = usuario.email;
+    }
+
+    function cerrarSesion() {
+      localStorage.removeItem('usuarioLogueado');
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
